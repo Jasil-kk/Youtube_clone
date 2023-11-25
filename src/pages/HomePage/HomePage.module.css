@@ -1,0 +1,9 @@
+.homePage_main {
+  width: 100%;
+}
+.body_section {
+  display: flex;
+  align-items: flex-start;
+  height: calc(100vh - 3.5rem);
+  background: var(--secondary-black);
+}

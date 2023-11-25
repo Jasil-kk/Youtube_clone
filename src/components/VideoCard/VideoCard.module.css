@@ -1,0 +1,42 @@
+.videoCard {
+  width: 18rem;
+  height: 15.4375rem;
+}
+
+.first_section {
+  width: 100%;
+  height: 9.6875rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.first_section img,
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.second_section {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.details_text {
+  color: var(--white-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.name_text {
+  margin-top: 0.25rem;
+  color: #aaa;
+  font-size: 0.75rem;
+  font-weight: 400;
+}

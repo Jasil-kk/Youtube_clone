@@ -1,0 +1,136 @@
+.singlePage_main {
+  width: 100%;
+  height: 100vh;
+  background: var(--secondary-black);
+}
+.body_container {
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.video_container {
+  width: 40rem;
+  height: 28.4375rem;
+}
+.video {
+  width: 100%;
+  height: 22.5rem;
+  border-radius: 0.6rem;
+}
+.about_text {
+  margin-top: 0.5rem;
+  color: var(--white-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.bottom_section {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about_container {
+  margin-left: 0.56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.name_text {
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.sub_text {
+  color: var(--grey-color);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.subScribe_btn {
+  margin-left: 1.5rem;
+  border: none;
+  border-radius: 10rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary-black);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.subScribe_btn:hover {
+  background: #c8c6c6;
+}
+.like_container {
+  margin-left: auto;
+  background: rgb(74, 73, 73);
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.like_container span {
+  color: var(--white-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.like_container span img,
+.share_container img,
+.more_container img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.disLiked {
+  border-left: 1px solid gray;
+  padding-left: 0.6rem;
+}
+
+.share_container {
+  margin-left: 0.5rem;
+  background: rgb(74, 73, 73);
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--white-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.more_container {
+  margin-left: 0.5rem;
+  background: rgb(74, 73, 73);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+}
+.side_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.categroy {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}

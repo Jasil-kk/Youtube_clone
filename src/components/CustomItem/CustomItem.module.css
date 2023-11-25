@@ -1,0 +1,24 @@
+.custom_item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.4s;
+  padding: 0.5rem;
+  gap: 0.875rem;
+}
+.custom_item span {
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.custom_item img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.custom_item:hover {
+  background: #303030;
+}
+.active {
+  background: #303030;
+}

@@ -1,0 +1,23 @@
+.video_card {
+  width: 25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.video_card img {
+  width: 10.5rem;
+  height: 5.875rem;
+  border-radius: 0.6rem;
+}
+.first_text {
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.second_text {
+  margin-top: 0.4rem;
+  color: var(--grey-color);
+  font-size: 0.75rem;
+  font-weight: 400;
+}

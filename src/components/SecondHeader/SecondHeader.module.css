@@ -1,0 +1,32 @@
+.secondHeader_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.secondHeader_Item_contianer {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  overflow: auto;
+  width: 100%;
+}
+.secondHeader_Item_contianer::-webkit-scrollbar {
+  display: none;
+}
+.arrow_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--secondary-black);
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.arrow_container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}

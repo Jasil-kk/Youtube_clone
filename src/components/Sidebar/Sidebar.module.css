@@ -1,0 +1,25 @@
+.sidebar_main {
+  width: 15rem;
+  height: 100%;
+  background: var(--secondary-black);
+}
+.list_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0.5rem;
+}
+.item_container {
+  width: 100%;
+  padding: 0.6rem 0;
+  border-bottom: 1.5px solid #454545;
+}
+.label_text {
+  margin-bottom: 0.5rem;
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+}

@@ -1,0 +1,87 @@
+.header_main {
+  width: 100%;
+  min-height: 3.5rem;
+  background: var(--secondary-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1.85rem;
+}
+.section_container {
+  display: flex;
+  align-items: center;
+}
+.menu_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 2rem;
+  width: 5.625rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+.search_form {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1.5px solid #444444;
+  width: 26.625rem;
+  height: 2.25rem;
+  overflow: hidden;
+}
+.search_form input {
+  width: 85%;
+  height: 100%;
+  border: none;
+  padding: 0.45rem 0.6rem;
+  background: transparent;
+  outline: none;
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.search_form input::placeholder {
+  color: var(--grey-color);
+}
+.search_container {
+  display: grid;
+  place-items: center;
+  background: #444444;
+  width: 15%;
+  height: 100%;
+}
+.mic_container {
+  margin-left: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #444444;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.notification_icon,
+.create_icon,
+.mic_container img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.notification_icon {
+  margin-left: 1rem;
+}
+.profile_container {
+  margin-left: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

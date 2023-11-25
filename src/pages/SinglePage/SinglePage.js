@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 const SinglePage = () => {
   const [video, setVideo] = useState({});
   const params = useParams();
+  const refreshToken = localStorage.getItem("refreshToken");
 
   const feedId = params.id;
   useEffect(() => {
@@ -34,6 +35,20 @@ const SinglePage = () => {
       return "";
     }
   };
+
+  useEffect(() => {
+    setInterval(() => {
+      axiosApi
+        .post("/auth/token/refresh", { refresh: refreshToken })
+        .then((response) => {
+          localStorage.setItem("token", response.data.access);
+          localStorage.setItem("refreshToken", response.data.refresh);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }, 240000);
+  }, []);
   return (
     <div className={classes.singlePage_main}>
       <Header />

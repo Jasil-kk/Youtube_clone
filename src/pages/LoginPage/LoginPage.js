@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./LoginPage.module.css";
-import axios from 'axios';
+import axiosApi from "../../axiosMethod";
 
 const LoginPage = () => {
   const [data, setData] = useState({
@@ -10,11 +10,18 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post("/api/auth/login",data).then((response)=>{
+    axiosApi
+      .post("/auth/login", data)
+      .then((response) => {
         console.log(response.data);
-    })
-  }
-
+        localStorage.setItem("token", response.data.data.token);
+        localStorage.setItem("refreshToken", response.data.data.refresh);
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.error("Error", error);
+      });
+  };
 
   return (
     <div className={classes.LoginPage_main}>

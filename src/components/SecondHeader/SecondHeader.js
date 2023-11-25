@@ -25,7 +25,7 @@ const SecondHeader = () => {
         <CustomCategory text={"Item"} />
         <CustomCategory text={"Item"} />
         <CustomCategory text={"Item"} />
-        <CustomCategory text={"Item"} />
+        <CustomCategory text={"LastItem"} />
       </div>
       <div className={classes.arrow_container}>
         <img src={arrow} alt="Arrow" />

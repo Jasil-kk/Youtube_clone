@@ -1,6 +1,6 @@
 import axios from 'axios';
 
- const API_URL = "https://react-test.aventusinformatics.com/api";
+ const API_URL = "/api";
 
 const axiosApi = axios.create({
   baseURL: API_URL, 
@@ -12,7 +12,7 @@ const axiosApi = axios.create({
 axiosApi.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
-    config.headers.Authorization = `token ${token}`;
+    config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });

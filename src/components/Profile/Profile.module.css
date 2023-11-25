@@ -1,0 +1,65 @@
+.profile_main {
+  position: fixed;
+  top: 2.85rem;
+  right: 1.5rem;
+  width: 14rem;
+  height: 10rem;
+  background: var(--primary-black);
+  z-index: 6;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.85rem;
+}
+.avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name_text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.email_text {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #a2a0a0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lgout_btn {
+  margin-top: auto;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: red;
+  background: var(--white-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.4s;
+}
+
+.lgout_btn:hover {
+  background: red;
+  color: var(--white-color);
+}
+
+.closer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}

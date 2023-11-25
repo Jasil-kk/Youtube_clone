@@ -79,6 +79,7 @@
   height: 2rem;
   overflow: hidden;
   border-radius: 50%;
+  cursor: pointer;
 }
 .profile_container img {
   width: 100%;
